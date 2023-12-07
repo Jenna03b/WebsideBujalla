@@ -1,0 +1,73 @@
+.tarcica {
+height: 800px;
+width: 100%;
+}
+
+.tarcica h1 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    color: #715143;
+    text-align: center;
+}
+.tarcica .container {
+    padding: 75px 0;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.tarcica .gallery-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70vh;
+}
+.tarcica .item {
+    flex: 1;
+    height: 550px;
+    background-position: center;
+    background-size: cover;
+    transition: flex 0.8s ease;
+}
+.tarcica .item:hover {
+    flex: 7;
+}
+.tarcica .item-1 {
+    background-image: url('tarcica.jpg');
+}
+.tarcica .item-2 {
+    background-image: url('tarcica_1.jpg');
+}
+.tarcica .item-3 {
+    background-image: url('tarcica_2.jpg');
+}
+.tarcica .item-4 {
+    background-image: url('tarcica_3.jpg');
+}
+.tarcica .item-5 {
+    background-image: url('tarcica_4.jpg');
+}
+
+@media only screen and (max-width: 600px) {
+    .tarcica {
+        height: 400px;
+        width: 100%;
+        }
+        .tarcica h1 {
+            font-family: "Source Sans Pro", sans-serif;
+            font-size: 20px;
+            font-weight: 300;
+            color: #715143;
+            text-align: center;
+        }
+        .tarcica .item {
+            flex: 1;
+            height: 200px;
+            background-position: center;
+            background-size: cover;
+            transition: flex 0.8s ease;
+        }
+        .tarcica .item:hover {
+            flex: 7;
+        }
+    }

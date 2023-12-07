@@ -660,7 +660,6 @@
     display: block;
     width: 100%;
     min-height: 100vh;
-    background-image: url("https://source.unsplash.com/pkhBlvTLyog/1920x1280");
     background-size: cover;
     background-position: center right;
     background-repeat: no-repeat;
@@ -669,7 +668,7 @@
   .home{
     height: 930px;
     width: 100%;
-    background-image: url(C:/Users/bujal/Desktop/Firma/Bujalla/photos/drzwi-tlo2.jpg);
+    background-image: url(drzwi-tlo2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -680,11 +679,11 @@
     align-items:last baseline;
   }
 
-  @media only screen and (min-width: 500px) {
+  @media only screen and (max-width: 500px) {
     .home{
       height: 730px;
       width: 100%;
-      background-image: url(C:/Users/bujal/Desktop/Firma/Bujalla/photos/drzwi-tlo2.jpg);
+      background-image: url(drzwi-tlo2.jpg);
     }
     .logo{
       max-block-size: 0%;
@@ -695,7 +694,7 @@
       .home{
         height: 500px;
         width: 100%;
-        background-image: url(C:/Users/bujal/Desktop/Firma/Bujalla/photos/drzwi-tlo2.jpg);
+        background-image: url(drzwi-tlo2.jpg);
       }
       .logo{
         max-block-size: 60%;
@@ -733,14 +732,19 @@
     
   }
 
+  .boxes .container iframe {
+    height: 500px;
+    width: 1200px;
+    margin-top: 40px;
+  }
+
   .boxes{
     height: 600px;
-    background-image: url(C:/Users/bujal/Desktop/Firma/Bujalla/photos/tlo.png);
+    background-image: url(tlo.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    
   }
 
   .box {
@@ -764,7 +768,7 @@
     border-radius: 55px;
   }
 
-  /* Zmiany dla szerokości ekranu do 600 pikseli (przykładowa wartość) */
+
 @media screen and (max-width: 600px) {
   .boxes {
     height: 200px;
@@ -774,9 +778,15 @@
     position: static; /* Auto dostosuje wysokość do zawartości */
   }
 
+  .boxes .container iframe {
+    height: 120px;
+    width: 340px;
+    
+  }
+
   .box, .item {
     height: 100%;
-    width: 100%; /* Rozciągnij na całą szerokość dostępnej przestrzeni */
+    width: 100%;
     margin: 2px 2px 2px 2px;
     
   }
@@ -787,64 +797,6 @@
     border-radius: 15px;
   }
 }
-
-
-  #frmContact {
-    border-top:#F0F0F0 2px solid;
-    background:#FAF8F8;
-    padding:10px;
-    text-align: left;
-    margin-left: 17%;
-    margin-right: 17%;
-
-  }
-
-  #frmContact div {
-    margin-bottom: 15px
-  } 
-
-  #frmContact div label {
-    margin-left: 5px
-  }
-
-  .information .demoInputBox {
-    padding:10px; 
-    border:#F0F0F0 1px solid; 
-    border-radius:6px;
-  }  
-
-  .information .error {
-    background-color: #FF6600;
-    border:#AA4502 1px solid;
-    padding: 5px 10px;
-    color: #FFFFFF;
-    border-radius:4px;
-  }
-
-  .information .success {
-    background-color: #12CC1A;
-    border:#0FA015 1px solid;
-    padding: 5px 10px;
-    color: #FFFFFF;
-    border-radius:4px;
-  }
-
-  .information .info {
-    font-size: .8em;
-    color: #FF6600;
-    letter-spacing: 2px;
-    padding-left: 5px;
-  }
-
-  .information .btnAction {
-    background-color: #715143;
-    border: 0;
-    padding:10px 40px;
-    color:#FFF;
-    border:#F0F0F0 1px solid; 
-    border-radius:4px;
-  }
-
 
   .olx {
     height: 45px;
@@ -861,7 +813,6 @@
     text-align: center;
   
   }
-  
   main footer ul {
     line-height: 1.5;
     margin: 0 0 16px 0;
@@ -880,7 +831,6 @@
     text-decoration: none;
   
   }
- 
   main footer .secondary-links li a {
     font-size: 20px;
     font-weight: 100 !important;
